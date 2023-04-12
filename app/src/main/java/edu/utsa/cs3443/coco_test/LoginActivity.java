@@ -29,23 +29,25 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
-                    //correct
-                    //Toast.makeText(LoginActivity.this, "LOGIN SUCCESSFUL", Toast.LENGTH_SHORT).show();
-                    //Button button = findViewById(R.id.loginbtn);
-                    //button.setOnClickListener(new View.OnClickListener() {
-                       // @Override
-                        //public void onClick(View v) {
                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                             startActivity(intent);
-                      //  }
-                   // });
                 }
                 else {
-                    //incorrect
                     Toast.makeText(LoginActivity.this, "Incorrect username or password.", Toast.LENGTH_LONG).show();
                 }
             }
         });
+
+        Button registerbtn = findViewById(R.id.registerbtn);
+        registerbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
 
     }
 }
