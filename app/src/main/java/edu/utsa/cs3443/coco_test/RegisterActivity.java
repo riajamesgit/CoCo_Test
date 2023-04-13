@@ -13,6 +13,13 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+        /**
+         * TODOS:
+         *  - Create a function that writes to a file that stores all of the users information
+         *  - ERROR CHECK: Create a function that checks to see if the users information already exists
+         *      - Zach
+         *
+         */
 
         Button signupbtn = findViewById(R.id.signupbtn);
         signupbtn.setOnClickListener(new View.OnClickListener() {
