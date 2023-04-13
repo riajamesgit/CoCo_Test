@@ -24,13 +24,18 @@ public class LoginActivity extends AppCompatActivity {
         MaterialButton loginbtn = (MaterialButton) findViewById(R.id.loginbtn);
 
         //admin and admin are correct username and password
-
+        /**
+         * TODOS:
+         * - Create a function that checks to see if a existing username and corresponding password match the users input
+         *      - Do we have to create a class that runs the functions so that we can call them? Im not sure how fragments work
+         *      -- Zach lol
+         */
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
-                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                            startActivity(intent);
+                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    startActivity(intent);
                 }
                 else {
                     Toast.makeText(LoginActivity.this, "Incorrect username or password.", Toast.LENGTH_LONG).show();
