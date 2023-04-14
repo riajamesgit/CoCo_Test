@@ -1,7 +1,10 @@
 package edu.utsa.cs3443.coco_test;
 
 import androidx.appcompat.app.AppCompatActivity;
+import edu.utsa.cs3443.coco_test.model.University;
+import edu.utsa.cs3443.coco_test.model.User;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -33,7 +36,13 @@ public class LoginActivity extends AppCompatActivity {
         loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
+                Context c = getApplicationContext();
+                University Uni = new University("UTSA");
+
+                Uni.importUsers("accounts", c);
+                Uni.importPosts("posts", c);
+                User user = Uni.getMap().get(username.getText().toString());
+                if (Uni.getMap().containsKey(username.getText().toString()) && password.getText().toString().equals(user.getPassWord())) {
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
                 }
