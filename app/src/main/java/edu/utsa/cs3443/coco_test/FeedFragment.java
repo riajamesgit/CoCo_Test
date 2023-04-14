@@ -22,7 +22,7 @@ public class FeedFragment extends Fragment {
         /**
          * TODOS:
          *  - Check to see if this code below works ( if anyone sees this can yall please try to run this and see if theres 11
-         *  TextViews in feed
+         *  TextViews in feed )
          *  - Find out a way to get a feed to refresh the top X amount of posts
          *      - Probably with a function
          *          -- Zach
