@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">CoCo_Test</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Jane Doe</string>
+    <string name="username">janedoe123</string>
+    <string name="major">Computer Science</string>
+    <string name="email">jane.doe@my.utsa.edu</string>
+    <string name="bio">Hi! My name is Jane Doe! I go to UTSA and I\'m majoring in Computer Science. I love baking and watching TV with my cats.</string>
 </resources>
