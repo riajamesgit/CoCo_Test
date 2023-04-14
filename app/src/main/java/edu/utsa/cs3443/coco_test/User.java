@@ -26,7 +26,7 @@ public class User {
      * @param insertUniEmail - email to be given to a new instance of a User object
      * @param insertAccountID - account ID to be given to a new instance of a User object
      */
-    public User(String insertUserName, String insertPassword, String insertFirstName, String insertLastName, String insertMajor, String insertUniEmail, int insertAccountID) {
+    public User(String insertFirstName, String insertLastName, int insertAccountID, String insertUserName, String insertPassword, String insertMajor, String insertUniEmail) {
         this.userName = insertUserName;
         this.passWord = insertPassword;
         this.firstName = insertFirstName;

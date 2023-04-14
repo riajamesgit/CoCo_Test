@@ -10,10 +10,21 @@ package edu.utsa.cs3443.coco_test;
 public class Posts {
     /*                  Ex:        010720030830*/
     private int idNum; /*Format of MMDDYYYY0000 - represents an ID number associated with a user's post -- Josh*/
+    private int accountID; /* account ID that corresponds to the user who posted it*/
     private String post; // String representation for a specific user's post -- Josh
-    public Posts(String insertPost, int insertIDNum){
+
+    public int getAccountID() {
+        return accountID;
+    }
+
+    public void setAccountID(int accountID) {
+        this.accountID = accountID;
+    }
+
+    public Posts(String insertPost, int insertIDNum, int insertAccountID){
         this.idNum = insertIDNum;
         this.post = insertPost;
+        this.accountID = insertAccountID;
     }
     public String getPost(){
         return this.post;
