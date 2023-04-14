@@ -1,6 +1,10 @@
-package edu.utsa.cs3443.coco_test;
+package edu.utsa.cs3443.coco_test.model;
+
 
 import java.util.ArrayList;
+
+import edu.utsa.cs3443.coco_test.model.Posts;
+
 /**
  * Class that represents everything about a User object -- Josh
  *
@@ -15,7 +19,7 @@ public class User {
     private String uniEmail;
     private int accountID;
     private boolean isLoggedOn;
-    ArrayList<Posts> P;
+    ArrayList<Object> Post;
 
     /**
      * @param insertUserName - username to be given to a new instance of a User object
@@ -26,7 +30,7 @@ public class User {
      * @param insertUniEmail - email to be given to a new instance of a User object
      * @param insertAccountID - account ID to be given to a new instance of a User object
      */
-    public User(String insertUserName, String insertPassword, String insertFirstName, String insertLastName, String insertMajor, String insertUniEmail, int insertAccountID) {
+    public User(String insertFirstName, String insertLastName, int insertAccountID, String insertUserName, String insertPassword, String insertMajor, String insertUniEmail) {
         this.userName = insertUserName;
         this.passWord = insertPassword;
         this.firstName = insertFirstName;
@@ -35,6 +39,10 @@ public class User {
         this.uniEmail = insertUniEmail;
         this.accountID = insertAccountID;
         this.isLoggedOn = false; // should this be set to false when constructing a new User object? -- Josh
+        Post = new ArrayList<>();
+    }
+    public void addPost(Posts post){
+        Post.add(post);
     }
     public String getUserName(){
         return this.userName;

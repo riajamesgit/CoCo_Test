@@ -12,27 +12,29 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import edu.utsa.cs3443.coco_test.controller.FeedFragmentController;
+
 
 public class FeedFragment extends Fragment {
-
-
+    private Context c;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         /**
          * TODOS:
          *  - Check to see if this code below works ( if anyone sees this can yall please try to run this and see if theres 11
-         *  TextViews in feed
+         *  TextViews in feed )
          *  - Find out a way to get a feed to refresh the top X amount of posts
          *      - Probably with a function
          *          -- Zach
          *
          */
         LinearLayout L = new LinearLayout(getContext());
+        c = getContext();
+        FeedFragmentController f = new FeedFragmentController(c);
         final int N = 10; // total number of textviews to add
 
         final TextView[] myTextViews = new TextView[N]; // create an empty array;
-
         for (int i = 0; i < N; i++) {
             // create a new textview
             final TextView rowTextView = new TextView(getContext());
