@@ -14,8 +14,7 @@ import android.widget.TextView;
 
 
 public class FeedFragment extends Fragment {
-
-
+    private Context c;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -29,10 +28,11 @@ public class FeedFragment extends Fragment {
          *
          */
         LinearLayout L = new LinearLayout(getContext());
+        c = getContext();
+        FeedFragmentController f = new FeedFragmentController(c);
         final int N = 10; // total number of textviews to add
 
         final TextView[] myTextViews = new TextView[N]; // create an empty array;
-
         for (int i = 0; i < N; i++) {
             // create a new textview
             final TextView rowTextView = new TextView(getContext());
