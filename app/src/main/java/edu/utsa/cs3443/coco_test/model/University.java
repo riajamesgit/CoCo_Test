@@ -1,4 +1,4 @@
-package edu.utsa.cs3443.coco_test;
+package edu.utsa.cs3443.coco_test.model;
 
 import android.content.Context;
 
@@ -6,6 +6,10 @@ import android.content.Context;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+
+import edu.utsa.cs3443.coco_test.model.Posts;
+import edu.utsa.cs3443.coco_test.model.User;
+
 /**
  * Class that represents information about the University-specific application.
  * Only using UTSA for the scope of this project -- Josh

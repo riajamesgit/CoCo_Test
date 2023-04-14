@@ -1,7 +1,9 @@
-package edu.utsa.cs3443.coco_test;
+package edu.utsa.cs3443.coco_test.controller;
 
 import android.content.Context;
 import android.view.View;
+
+import edu.utsa.cs3443.coco_test.model.University;
 
 public class FeedFragmentController extends University implements View.OnClickListener{
     private Context c;

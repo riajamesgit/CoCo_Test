@@ -1,7 +1,10 @@
-package edu.utsa.cs3443.coco_test;
+package edu.utsa.cs3443.coco_test.model;
 
 
 import java.util.ArrayList;
+
+import edu.utsa.cs3443.coco_test.model.Posts;
+
 /**
  * Class that represents everything about a User object -- Josh
  *

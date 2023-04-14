@@ -12,6 +12,8 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import edu.utsa.cs3443.coco_test.controller.FeedFragmentController;
+
 
 public class FeedFragment extends Fragment {
     private Context c;

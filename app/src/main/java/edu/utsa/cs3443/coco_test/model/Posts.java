@@ -1,4 +1,4 @@
-package edu.utsa.cs3443.coco_test;
+package edu.utsa.cs3443.coco_test.model;
 
 /**
  * Class that represents everything about a user's post/post object -- Josh
