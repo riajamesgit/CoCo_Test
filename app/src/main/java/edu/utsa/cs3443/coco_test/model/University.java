@@ -6,6 +6,7 @@ import android.content.Context;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 import edu.utsa.cs3443.coco_test.model.Posts;
 import edu.utsa.cs3443.coco_test.model.User;
@@ -20,9 +21,11 @@ public class University {
     private String name;
     private String uniEmail;
     ArrayList<User> U;
+    public HashMap<String, User> map;
     public University(String insertName){
         this.name = insertName;
         U = new ArrayList<>();
+        map = new HashMap<>();
     }
     public void importUsers(String fileName, Context c){
         BufferedReader br;
@@ -35,6 +38,7 @@ public class University {
             while ((line = br.readLine()) != null) {
                 String[] field = line.split(",");
                 user  = new User(field[0],field[1],Integer.parseInt(field[2]),field[3],field[4],field[5],field[6]);
+                map.put(field[3], user);
                 addUser(user);
             }
             br.close();
