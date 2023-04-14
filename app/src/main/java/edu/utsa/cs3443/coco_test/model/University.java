@@ -21,12 +21,21 @@ public class University {
     private String name;
     private String uniEmail;
     ArrayList<User> U;
-    public HashMap<String, User> map;
+    HashMap<String, User> map;
     public University(String insertName){
         this.name = insertName;
         U = new ArrayList<>();
         map = new HashMap<>();
     }
+
+    public HashMap<String, User> getMap() {
+        return map;
+    }
+
+    public void setMap(HashMap<String, User> map) {
+        this.map = map;
+    }
+
     public void importUsers(String fileName, Context c){
         BufferedReader br;
         String line;

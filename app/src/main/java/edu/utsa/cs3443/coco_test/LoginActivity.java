@@ -39,8 +39,8 @@ public class LoginActivity extends AppCompatActivity {
                 Context c = getApplicationContext();
                 University Uni = new University("UTSA");
                 Uni.importUsers("accounts", c);
-                User user = Uni.map.get(username.getText().toString());
-                if (Uni.map.containsKey(username.getText().toString()) && password.getText().toString().equals(user.getPassWord())) {
+                User user = Uni.getMap().get(username.getText().toString());
+                if (Uni.getMap().containsKey(username.getText().toString()) && password.getText().toString().equals(user.getPassWord())) {
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     startActivity(intent);
                 }
