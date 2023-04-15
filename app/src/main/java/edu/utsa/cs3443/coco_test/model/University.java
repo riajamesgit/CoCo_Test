@@ -1,5 +1,6 @@
 package edu.utsa.cs3443.coco_test.model;
 
+import android.app.Activity;
 import android.content.Context;
 
 
@@ -57,6 +58,7 @@ public class University {
             System.out.println("ERROR UH-OH");
         }
     }
+
     public void importPosts(String fileName, Context c){
         BufferedReader br;
         String line;
@@ -78,9 +80,11 @@ public class University {
             System.out.println("ERROR UH-OH");
         }
     }
+
     public void addUser(User user){
         U.add(user);
     }
+
     public User getUser(int accountID){
         for (int counter = 0; counter < U.size(); counter++){
             if (U.get(counter).getAccountID() == accountID){
@@ -88,5 +92,14 @@ public class University {
             }
         }
         return U.get(1);
+    }
+
+    public ArrayList<String> getUserNameList(String fileName, Context c) {
+        importUsers(fileName, c);
+        ArrayList<String> userNameList = new ArrayList<>();
+        for (int counter = 0; counter < U.size(); counter++) {
+            userNameList.add(U.get(counter).getUserName());
+        }
+        return userNameList;
     }
 }
