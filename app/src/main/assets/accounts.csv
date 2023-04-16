@@ -1,4 +1,3 @@
-First,Last,AccountID,Username,Password,Major,UniversityEmail,IsLoggedOn
 Admin,Developer,0,admin,admin,N/A,N/A
 Zach,Sierra,1,ZachSierra,admin,Computer Science,zachary.sierra@my.utsa.edu
 Ria,James,2,RiaJames,admin,Computer Science,ria.james@my.utsa.edu

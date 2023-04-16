@@ -49,6 +49,7 @@ public class University {
                 user  = new User(field[0],field[1],Integer.parseInt(field[2]),field[3],field[4],field[5],field[6]);
                 map.put(field[3], user);
                 addUser(user);
+                System.out.println(field[0] + field[1] + Integer.parseInt(field[2]) + field[3] + field[4] + field[5] + field[6]);
             }
             br.close();
         }

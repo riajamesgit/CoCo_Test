@@ -11,8 +11,7 @@ import android.view.ViewGroup;
 public class ProfileFragment extends Fragment {
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         /**
          * TODOS:
          * - Probably create a TextView with a layout of the profile so we can change it
