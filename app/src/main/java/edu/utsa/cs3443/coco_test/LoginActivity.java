@@ -14,7 +14,10 @@ import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
 
+import java.util.ArrayList;
+
 public class LoginActivity extends AppCompatActivity {
+    static ArrayList<String> userNameList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +43,7 @@ public class LoginActivity extends AppCompatActivity {
                 University Uni = new University("UTSA");
 
                 Uni.importUsers("accounts.csv", c);
+                userNameList = Uni.getUserNameList("accounts.csv", c);
                 Uni.importPosts("posts.csv", c);
                 User user = Uni.getMap().get(username.getText().toString());
                 if (Uni.getMap().containsKey(username.getText().toString()) && password.getText().toString().equals(user.getPassWord())) {

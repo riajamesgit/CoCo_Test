@@ -2,6 +2,8 @@ package edu.utsa.cs3443.coco_test;
 
 //import static edu.utsa.cs3443.coco_test.LoginActivity.userNameList;
 
+import static edu.utsa.cs3443.coco_test.LoginActivity.userNameList;
+
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,6 +14,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+
 
 
 public class SearchFragment extends Fragment {
@@ -29,7 +33,7 @@ public class SearchFragment extends Fragment {
         return mainView;
     }
 
-   /* @Override
+    @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
@@ -51,5 +55,5 @@ public class SearchFragment extends Fragment {
                 return false;
             }
         });
-    }*/
+    }
 }
