@@ -25,14 +25,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:iconifiedByDefault="false"
-        app:queryHint="Search...">
+        app:queryHint="Search..."
+        android:focusableInTouchMode="true"
+        android:clickable="true">
+
+        <ListView
+            android:id="@+id/listview_fragment_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/searchview_fragment_search">
+        </ListView>
+
     </androidx.appcompat.widget.SearchView>
     
-    <ListView
-        android:id="@+id/listview_fragment_search"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </ListView>
+<!--    <ListView-->
+<!--        android:id="@+id/listview_fragment_search"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/searchview_fragment_search">-->
+<!--    </ListView>-->
 
 
 </RelativeLayout>

@@ -1,6 +1,5 @@
 package edu.utsa.cs3443.coco_test;
 
-//import static edu.utsa.cs3443.coco_test.LoginActivity.userNameList;
 
 import static edu.utsa.cs3443.coco_test.LoginActivity.userNameList;
 

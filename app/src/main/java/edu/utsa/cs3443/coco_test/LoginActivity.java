@@ -42,7 +42,7 @@ public class LoginActivity extends AppCompatActivity {
                 Context c = getApplicationContext();
                 University Uni = new University("UTSA");
 
-                Uni.importUsers("accounts.csv", c);
+                // Uni.importUsers("accounts.csv", c);
                 userNameList = Uni.getUserNameList("accounts.csv", c);
                 Uni.importPosts("posts.csv", c);
                 User user = Uni.getMap().get(username.getText().toString());
