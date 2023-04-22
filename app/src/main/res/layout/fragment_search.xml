@@ -29,21 +29,21 @@
         android:focusableInTouchMode="true"
         android:clickable="true">
 
-        <ListView
-            android:id="@+id/listview_fragment_search"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/searchview_fragment_search">
-        </ListView>
+<!--        <ListView-->
+<!--            android:id="@+id/listview_fragment_search"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_below="@+id/searchview_fragment_search">-->
+<!--        </ListView>-->
 
     </androidx.appcompat.widget.SearchView>
     
-<!--    <ListView-->
-<!--        android:id="@+id/listview_fragment_search"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_below="@+id/searchview_fragment_search">-->
-<!--    </ListView>-->
+    <ListView
+        android:id="@+id/listview_fragment_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchview_fragment_search">
+    </ListView>
 
 
 </RelativeLayout>
